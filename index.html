@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TSPodcast</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link id="darkmode" href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>    
+<body>
+
+<img class="navbrand" onclick="location.href='#'" src="C:\Users\Oskar\Downloads/TSPodcast.png">
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark">          
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.twitch.tv/tspodcast">Twitch Channel</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.soundcloud.com/thetspodcast">Soundcloud</a>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oggyerino</a>
+<div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item text-center" href="https://www.twitch.tv/oggyerino">Twitch</a>
+    <a class="dropdown-item text-center" href="https://www.twitter.com/oggyerino">Twitter</a>
+</div>
+    </li>
+    <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tSparkles</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-center" href="https://www.twitch.tv/tsparkles">Twitch</a>
+            <a class="dropdown-item text-center" href="https://www.twitter.com/flappyflag">Twitter</a>
+        </div>
+    </li>
+    </ul>
+</div>
+</div>
+</nav>
+
+<div id="all"><div id="twitch-embed"></div></div>
+
+</body>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script type="text/javascript">
+  var embed = new Twitch.Embed("twitch-embed", {
+    width: 1152,
+    height: 648,
+    channel: "tspodcast",
+    layout: "video",
+    autoplay: false
+  });
+
+  embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+    var player = embed.getPlayer();
+    player.play();
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>    

@@ -1,0 +1,43 @@
+/*Navbar*/
+
+.dropdown-menu {
+    min-width: 0;
+}
+
+nav {
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 10%;
+}
+
+.navbrand {
+    width: 75px;
+    margin-top: 2.5%;
+    margin-left: 10%;
+}
+
+.navbrand:hover {
+    cursor: pointer;
+}
+
+/*Body*/
+body {
+    background-color: black;
+}
+
+#all{
+    margin-top: 2.5%;
+    width:100%;
+    text-align:center;
+}
+
+@media (max-width: 1153px){
+    nav {
+        margin-right: 0%;
+    }
+    
+    .navbrand {
+        margin-left: 0%;
+    }
+}
+
