@@ -25,25 +25,10 @@ body {
     background-color: black;
 }
 
-/*#all{
+#all{
     margin-top: 2.5%;
     width:100%;
     text-align:center;
-}*/
-
-  .twitch {
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      padding-top: 56.25%;
-  }
-  .twitchiframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
 }
 
 @media (max-width: 1153px){
